@@ -1,0 +1,167 @@
+/*
+major thanks to @miguelpduarte and his LTW repository
+for his vast knowledge on how little things can save
+time and stll get completed
+*/ 
+:root {
+    --maincolor_dark: #2A2F33;
+    --maincolor-1: #046DD5;
+    --maincolor-2: #F4655F;
+
+    --seccolor-1: #E1493E;
+    --seccolor-2: #8ABA56;
+    --seccolor-3: #5B4282;
+    --seccolor-4: #FF8932;
+    --seccolor-5: #19B6E9;
+    --seccolor-6: #E84C8B;
+}
+
+body > header {
+    font-family: Verdana, sans-serif;
+    background-color: var(--maincolor-1);
+    padding: 1em;
+    margin: 0;
+}
+body > header a {
+    color: white;
+    text-decoration: none;
+} 
+body > header > * {
+    margin: 0;
+    padding: 0;
+    padding-top: 0.2em;
+}
+
+body > header > h1 a {
+    font-size: 30px;
+}
+body > header > h2 a {
+    font-size: 14px;
+}
+#signup > a {
+    font-size: 13px;
+}
+#signup a:first-child::after {
+    content: '';
+    margin: 0 1em;
+    border-right: 1px solid white;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+nav > ul > li {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.1em;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+/*
+colored spaces between 
+each nth-child of the list
+*/
+nav > ul > li{
+    border-top: 5px solid black;
+    padding: 1em;
+}
+nav > ul > li:nth-child(1){
+    border-top-color: var(--seccolor-1);
+}
+nav > ul > li:nth-child(2){
+    border-top-color: var(--seccolor-2);
+}
+nav > ul > li:nth-child(3){
+    border-top-color: var(--seccolor-3);
+}
+nav > ul > li:nth-child(4){
+    border-top-color: var(--seccolor-4);
+}
+nav > ul > li:nth-child(5){
+    border-top-color: var(--seccolor-5);
+}
+nav > ul > li:nth-child(6){
+    border-top-color: var(--seccolor-6);
+}
+
+/* related news*/
+aside#related {
+    background-color: var(--maincolor_dark);
+    padding:1em; 
+}
+aside#related a {
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+aside#related p {
+    font-family: Georgia;
+    color: white;
+}
+
+/* news section */
+section#news header {
+    position: absolute;
+    top: 0.5em;
+    left: 1.5em;
+    max-width: 14em;
+}
+section#news header a{
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    text-shadow: 6px 4px 2px black;
+}
+section#news {
+    margin-top: 1em;
+}
+section#news article:first-child {
+    margin-top: 0;
+}
+section#news article {
+    position: relative;
+    background-color: white;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+section#news article p {
+    font-family: Georgia, sans-serif;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+section#news article p:first-of-type::first-letter {
+    font-weight: bold;
+    font-size: 200%;
+}
+section#news article footer {
+    background-color: var(--maincolor-2);
+    padding: 1em;
+    font-family: Georgia;
+    color: white;
+}
+section#news article footer a {
+    color: white;
+}
+
+.date {
+    margin: 0 1em;
+}
+.author::before {
+    content: 'by ';
+}
+.comments::after {
+    content: ' comments';
+}
+
+footer:last-of-type {
+    background-color: var(--maincolor_dark);
+    color: white;
+    padding: 0.4em;
+    margin: 1em;
+}
