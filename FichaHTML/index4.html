@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Profile</title>
+</head>
+<body>
+  <header>
+    <h1>FUKI MESSENGER</h1>
+    <img src="logo.png" alt="logo for FukiMessenger Company">
+    <nav id="menu">
+      <ul>
+        <li><a href="messages.php">Messages</li></a>
+        <li><a href="about.php">About</li></a>
+        <li><a href="register.php">Register</li></a>
+      </ul>
+    </nav>
+    <form action="login.php" method="post">
+      <label>Username: <input type="text" name="username"> </label>
+      <label>Password: <input type="password" name="password"> </label>
+    </form>
+  </header>
+  <aside id="friends">
+    <h2>Friends</h2>
+    <ul>
+      <li>
+        <a href="friend.php?id=joana">
+          <img src="photo.php?id=joana" alt="Joana Ramos profile">Joana Ramos
+        </a>
+      </li>
+      <li>
+        <a href="friend.php?id=mariana">
+          <img src="photo.php?id=mariana" alt="Mariana Aguiar profile">Mariana Aguiar
+        </a>
+      </li>
+      <li>
+        <a href="friend.php?id=diogo">
+          <img src="photo.php?id=diogo" alt="Diogo Yaguas profile">Diogo Yaguas
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <section id="profile">
+    <h2>My Profile</h2>
+    <img src="facepic.png" alt="Profile Picture">
+    <ul>
+      <li>Name: Gonçalo Bernardo</li>
+      <li>Age: 20</li>
+      <li>Country: Portugal</li>
+    </ul>
+  </section>
+  <section id="posts">
+    <h2>My Posts</h2>
+    <article>
+      <h3>So today I ate...</h3>
+      <img src="image.php?id=6666" alt="Image for post 6666">
+      <p> I just loved eating these caramel donut filled-macarrons @FukiTown!!! </p>
+      <footer>
+        <a href="comments.php?id=24345">Comments (54)</a>
+        <span class="date">@Aug 25th 2018</span>
+      </footer>
+    </article>
+    <article>
+      <h3>What have you been doing?</h3>
+      <img src="image.php?id=4142" alt="Image for post 4142">
+      <p> So I've been thinking about doing this trip to Italy... What do you think?? xoxo </p>
+      <footer>
+        <a href="comments.php?id=24421">Comments (2)</a>
+        <span class="date">@Jul 4th 2012</span>
+      </footer>
+    </article>
+  </section>
+  </body>
+</html>

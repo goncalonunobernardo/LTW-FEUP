@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>USER FORM @LTW</title>
+  </head>
+  <body>
+    <form action ="save.php" method ="get">
+      <label>Name:
+        <input type="text" name ="name">
+      </label>
+      <fieldset><!--RADIO CHECKBOXES PREFERABLY-->
+        <legend>Age</legend>
+        <label> <input type="radio" name="age" value="-18">&lt;18 </label>
+        <label> <input type="radio" name="age" value="19-35">19-35 </label>
+        <label> <input type="radio" name="age" value="36-48">36-48 </label>
+        <label> <input type="radio" name="age" value="49+">&gt;49 </label>
+      </fieldset>
+      <label>Profession:
+      <input type="text" name="profession">
+      </label>
+      <label>Country:
+        <select name="fruit">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="italy">Italy</option>
+          <option value="portugal">Portugal</option>
+        </select>
+      </label>
+      <fieldset><!--NORMAL CHECKBOXES PREFERABLY-->
+        <legend>Interests</legend>
+        <label> <input type="checkbox" name="interest" value="videogames">Video Games</label>
+        <label> <input type="checkbox" name="interest" value="cars">Cars</label>
+        <label> <input type="checkbox" name="interest" value="reading">Reading</label>
+        <label> <input type="checkbox" name="interest" value="daydreaming">Day Dreaming</label>
+      </fieldset>
+      <label>How did you find us?
+        <textarea name ="how" rows="5" cols="40"></textarea>
+      </label>
+      <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
+
+<!--WITH get
+file:///C:/Users/GBernardo/Documents/FEUP/3ano/ltw/FichaHTML/save.php?name=sure+bean&age=19-35&profession=student+engineer&fruit=portugal&interest=daydreaming&how=Internet+I+guess
+-->
+<!--WITH post
+file:///C:/Users/GBernardo/Documents/FEUP/3ano/ltw/FichaHTML/save.php
+-->
