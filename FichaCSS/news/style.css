@@ -121,6 +121,9 @@ section#news header a{
 section#news {
     margin-top: 1em;
 }
+section#news img {
+    width: 100%;
+}
 section#news article:first-child {
     margin-top: 0;
 }
