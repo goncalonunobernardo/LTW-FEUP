@@ -32,6 +32,11 @@
     margin: 0;
     background-color: #edeff0;
   }
+  #comments form h2 {
+    font-size: 95%;
+    font-weight: bold;
+  }
+
   #comments input {
     background-color: #edeff0;
   }
